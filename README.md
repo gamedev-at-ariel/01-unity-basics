@@ -6,5 +6,3 @@ properties, behaviors, scripts, movement, time, materials, keyboard and mouse in
 
 Text explanations are available 
 [here](https://github.com/erelsgl-at-ariel/gamedev-5780) in folder 05.
-
-Author: Erel Segal-Halevi.
