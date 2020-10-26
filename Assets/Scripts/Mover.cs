@@ -1,12 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 /**
  *  This component moves its object right or left in a fixed speed.
  */
 public class Mover: MonoBehaviour {
-    [Tooltip("Movement speed in meters per second")] [SerializeField] float speed = 1f;
+    [Tooltip("Movement speed in meters per second")]
+    [SerializeField]
+    float speed = 1f;
 
     // Start is called before the first frame update
     void Start() {
