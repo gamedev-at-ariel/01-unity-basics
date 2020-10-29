@@ -8,6 +8,10 @@ public class Mover: MonoBehaviour {
     [SerializeField]
     float speed = 1f;
 
+    public void AddSpeed(float newSpeed) {
+        speed += newSpeed;
+    }
+
     // Start is called before the first frame update
     void Start() {
         //Debug.Log("Start");
