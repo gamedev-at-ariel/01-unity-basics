@@ -5,5 +5,4 @@ concepts of Unity programming: game objects, components, transform, rendering,
 properties, behaviors, scripts, movement, time, materials, keyboard and mouse input.
 
 Text explanations are available 
-[here](https://github.com/erelsgl-at-ariel/gamedev-5782) in folder 05.
-
+[here](https://github.com/erelsgl-at-ariel/gamedev-5782) in folder 03.
