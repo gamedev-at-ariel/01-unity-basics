@@ -5,5 +5,8 @@ concepts of Unity programming: game objects, components, transform, rendering,
 properties, behaviors, scripts, movement, time, materials, keyboard and mouse input.
 
 Text explanations are available 
-[here](https://github.com/erelsgl-at-ariel/gamedev-5782) in folder 03.
+[here](https://github.com/gamedev-at-ariel/gamedev-5782) in folder 03.
 
+NOTE: To clone the project, you may need to install git lfs:
+
+    git lfs install 
