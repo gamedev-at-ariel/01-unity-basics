@@ -524,10 +524,6 @@ GameObject:
   m_Component:
   - component: {fileID: 487561402}
   - component: {fileID: 487561401}
-  - component: {fileID: 487561406}
-  - component: {fileID: 487561403}
-  - component: {fileID: 487561404}
-  - component: {fileID: 487561405}
   - component: {fileID: 487561407}
   - component: {fileID: 487561408}
   m_Layer: 0
@@ -571,56 +567,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &487561403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 487561400}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a616b12253154f41afa8d24fba9029a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
---- !u!114 &487561404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 487561400}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 206605e95bd690d4aa069441e0bbacba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &487561405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 487561400}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13ff1037aa2ab3d43844264fab01a581, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &487561406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 487561400}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 226b078147eaed143bdd50a78c82804f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stepSize: 1
 --- !u!114 &487561407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -676,6 +622,40 @@ MonoBehaviour:
       m_Action: Move Down
       m_Flags: 0
     m_Flags: 0
+  moveTo:
+    m_Name: Move To
+    m_Type: 1
+    m_ExpectedControlType: 
+    m_Id: f8b035c8-a408-4d61-a0b9-dbef7ed2634a
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 4511b892-6490-420a-a8f5-9e49afbd6a64
+      m_Path: <Mouse>/leftButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move To
+      m_Flags: 0
+    m_Flags: 0
+  moveToLocation:
+    m_Name: Move To Location
+    m_Type: 0
+    m_ExpectedControlType: Vector2
+    m_Id: 798a6f33-7831-4847-8b98-a66d6204fa6e
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 05229540-1e02-487e-9a3e-959771a7d27b
+      m_Path: <Mouse>/position
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move To Location
+      m_Flags: 0
+    m_Flags: 0
 --- !u!114 &487561408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -721,6 +701,40 @@ MonoBehaviour:
       m_Processors: 
       m_Groups: 
       m_Action: Move Down
+      m_Flags: 0
+    m_Flags: 0
+  moveTo:
+    m_Name: Move To
+    m_Type: 1
+    m_ExpectedControlType: 
+    m_Id: edd46369-c314-4597-93d8-5cc2bf382831
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: ca48a33a-85bf-4ccf-baa9-94a4f3712f87
+      m_Path: <Mouse>/leftButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move To
+      m_Flags: 0
+    m_Flags: 0
+  moveToLocation:
+    m_Name: Move To Location
+    m_Type: 0
+    m_ExpectedControlType: Vector2
+    m_Id: 771e9421-1fe4-44ec-adb9-28e5cb180704
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 9b89b340-e7be-40f6-a556-1670f9d8ef4a
+      m_Path: <Mouse>/position
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move To Location
       m_Flags: 0
     m_Flags: 0
 --- !u!1 &519420028
