@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+
 
 /**
  * This component moves its object to the mouse position,
@@ -8,8 +10,8 @@ using UnityEngine;
  */
 public class MouseSmoothMover : MonoBehaviour {
     void Update() {
-        if (Input.GetMouseButton(0)) {  // left button down
-            Vector3 mousePositionInScreenCoordinates = Input.mousePosition;
+        if (Mouse.current.leftButton.isPressed) {  // left button down
+            Vector3 mousePositionInScreenCoordinates = Mouse.current.position.ReadValue();
             Vector3 mousePositionInWorldCoordinates = Camera.main.ScreenToWorldPoint(mousePositionInScreenCoordinates);
             mousePositionInWorldCoordinates.z = transform.position.z;
             transform.position = mousePositionInWorldCoordinates;

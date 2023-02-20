@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+
 
 /**
  * This component moves its object up/down
@@ -16,9 +18,11 @@ public class KeyboardSmoothMover : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (Input.GetKey(KeyCode.UpArrow)) {
+        // bool clickUp = Input.GetKey(KeyCode.UpArrow);  // Old UnityEngine.Input
+        bool clickUp = Keyboard.current.upArrowKey.isPressed;  // Old UnityEngine.Input
+        if (clickUp) {
             transform.position += new Vector3(0, speed * Time.deltaTime, 0);
-        } else if (Input.GetKey(KeyCode.DownArrow)) {
+        } else if (Keyboard.current.downArrowKey.isPressed) {
             transform.position += new Vector3(0, -speed * Time.deltaTime, 0);
         }
     }

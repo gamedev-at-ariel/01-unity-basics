@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+
 
 /**
  * This component moves its object one step up/down,
@@ -16,9 +18,9 @@ public class KeyboardClickMover : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (Input.GetKeyDown(KeyCode.UpArrow)) {
+        if (Keyboard.current.upArrowKey.wasPressedThisFrame) {
             transform.position += new Vector3(0, stepSize, 0);
-        } else if (Input.GetKeyDown(KeyCode.DownArrow)) {
+        } else if (Keyboard.current.downArrowKey.wasPressedThisFrame) {
             transform.position += new Vector3(0, -stepSize, 0);
         }
     }
