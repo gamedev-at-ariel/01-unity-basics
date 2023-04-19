@@ -15,6 +15,6 @@ public class Accelerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         GetComponent<Mover>().AddSpeed(Time.deltaTime * acceleration);
+        GetComponent<Mover>().AddSpeed(Time.deltaTime * acceleration);
     }
 }

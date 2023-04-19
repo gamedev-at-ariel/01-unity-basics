@@ -574,7 +574,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 487561400}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 045ba37313dbfdb489604dec9b670a64, type: 3}
   m_Name: 
@@ -589,8 +589,24 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: ba7b1525-84e4-44a7-aaf9-350d2993c26a
+      m_Id: 9256ba3c-5d22-4f2f-ac2b-9cd59d6f6c99
       m_Path: <Keyboard>/upArrow
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move Up
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 9c71f874-90ca-4ab1-91c4-e44ac68f59b3
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Move Up
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 272b3a49-5772-4387-a042-37683c8fc060
+      m_Path: <Joystick>/stick/up
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -606,16 +622,8 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: 32a49633-6213-4df5-bc5e-9a354ceffef4
+      m_Id: 2c7b8f5f-99f0-4c64-969c-a497d563b318
       m_Path: <Keyboard>/downArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Down
-      m_Flags: 0
-    - m_Name: 
-      m_Id: ac3b4b4d-9a54-4f1c-83cb-cb6a0b6fd5da
-      m_Path: <Keyboard>/s
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -631,7 +639,7 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: 4511b892-6490-420a-a8f5-9e49afbd6a64
+      m_Id: 07e89ab8-1eb1-4e47-9ed4-6182953b9ce6
       m_Path: <Mouse>/leftButton
       m_Interactions: 
       m_Processors: 
@@ -648,7 +656,7 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: 05229540-1e02-487e-9a3e-959771a7d27b
+      m_Id: 32458453-e681-4efd-8d78-988bc75fe2fc
       m_Path: <Mouse>/position
       m_Interactions: 
       m_Processors: 
@@ -804,7 +812,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.97
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -828,7 +836,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.355761, y: -0.10178472, z: -113.45787}
+  m_LocalPosition: {x: 2.19, y: -0.10178472, z: -113.45787}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
