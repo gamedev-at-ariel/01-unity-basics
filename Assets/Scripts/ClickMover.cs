@@ -10,7 +10,8 @@ using UnityEngine.InputSystem;
  * The key is customizable via the editor.
  */
 public class ClickMover : MonoBehaviour {
-    [Tooltip("Step size in meters")] [SerializeField] float stepSize = 1f;
+    [Tooltip("Step size in meters")] [SerializeField] 
+    float stepSize = 1f;
 
     [SerializeField]
     InputAction moveUp = new InputAction(type: InputActionType.Button);
@@ -19,20 +20,16 @@ public class ClickMover : MonoBehaviour {
     InputAction moveDown = new InputAction(type: InputActionType.Button);
 
     [SerializeField][Tooltip("Move the player to the location of 'moveToLocation'.")]
-    InputAction moveTo; 
+    InputAction moveTo = new InputAction(type: InputActionType.Button); 
 
     [SerializeField][Tooltip("Determine the location to 'moveTo'.")]
-    InputAction moveToLocation;
+    InputAction moveToLocation = new InputAction(type: InputActionType.Value, expectedControlType: "Vector2");
+
     void OnValidate() {
         // Provide default bindings for the input actions.
         // Based on answer by DMGregory: https://gamedev.stackexchange.com/a/205345/18261
-        if (moveTo == null)
-            moveTo = new InputAction(type: InputActionType.Button);
         if (moveTo.bindings.Count == 0)
             moveTo.AddBinding("<Mouse>/leftButton");
-
-        if (moveToLocation == null)
-            moveToLocation = new InputAction(type: InputActionType.Value, expectedControlType: "Vector2");
         if (moveToLocation.bindings.Count == 0)
             moveToLocation.AddBinding("<Mouse>/position");
     }

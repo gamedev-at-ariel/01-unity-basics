@@ -2,23 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/*
- * This component moves its object in a pre-specified speed.
- */
 public class Mover1 : MonoBehaviour
 {
+    [Tooltip("How fast the spaceship moves, in meters per second.")]
     [SerializeField]
-    Vector3 speed = new Vector3(0,0,0);
+    Vector3 velocity = new Vector3(1, 2, 0);
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(GetComponent<Transform>().position);
+        Debug.Log("Start");
     }
 
     // Update is called once per frame
     void Update()
     {
-        GetComponent<Transform>().position += Time.deltaTime * speed;
+        GetComponent<Transform>().position += velocity * Time.deltaTime;
     }
 }
