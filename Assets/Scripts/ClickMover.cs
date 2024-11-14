@@ -23,7 +23,7 @@ public class ClickMover : MonoBehaviour {
     InputAction moveTo = new InputAction(type: InputActionType.Button); 
 
     [SerializeField][Tooltip("Determine the location to 'moveTo'.")]
-    InputAction moveToLocation = new InputAction(type: InputActionType.Value, expectedControlType: "Vector2");
+    InputAction moveToLocation = new InputAction(type: InputActionType.Value, expectedControlType: nameof(Vector2));
 
     void OnValidate() {
         // Provide default bindings for the input actions.

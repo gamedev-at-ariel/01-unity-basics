@@ -668,11 +668,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: 
+  cloudProjectId: 943ed697-454f-4a9f-9402-ee0d936f69ed
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: 01-unity-basics 2024-10-30_21-47-42
+  organizationId: erel-segal-halevi
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1
   playerDataPath: 
