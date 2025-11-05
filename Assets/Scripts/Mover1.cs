@@ -19,4 +19,5 @@ public class Mover1 : MonoBehaviour
     {
         GetComponent<Transform>().position += velocity * Time.deltaTime;
     }
+
 }
